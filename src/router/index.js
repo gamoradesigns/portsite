@@ -1,10 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import BrandingMenu from "../views/menu/BrandingMenu.vue"
+import AgileBrandPageOutline from "../components/branding/agile/AgileBrandPageOutline.vue"
+import AltaBrandPageOutline from "../components/branding/alta/AltaBrandPageOutline.vue"
+import Package from "../components/branding/pack/Package.vue"
+import Business from "../components/branding/bus/Business.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
+ 
+
+
+
+
+
   {
     path: '/',
     name: 'Home',
@@ -13,11 +24,33 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  {
+    path: '/brandingMenu',
+    name: 'BrandingMenu',
+    component: BrandingMenu
+  },
+  {
+    path: '/agileBrandPageOutline',
+    name: 'AgileBrandPageOutline',
+    component: AgileBrandPageOutline
+  },
+  {
+    path: '/altaBrandPageOutline',
+    name: 'AltaBrandPageOutline',
+    component: AltaBrandPageOutline
+  },
+  {
+    path: '/package',
+    name: 'Package',
+    component: Package
+  },
+  {
+    path: '/business',
+    name: 'Business',
+    component: Business
+  },
 ]
 
 const router = new VueRouter({
