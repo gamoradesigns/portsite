@@ -6,6 +6,9 @@ import AgileBrandPageOutline from "../components/branding/agile/AgileBrandPageOu
 import AltaBrandPageOutline from "../components/branding/alta/AltaBrandPageOutline.vue"
 import Package from "../components/branding/pack/Package.vue"
 import Business from "../components/branding/bus/Business.vue"
+import VectorMenu from "../views/menu/VectorMenu"
+import MagMenu from "../views/menu/MagMenu"
+
 
 Vue.use(VueRouter)
 
@@ -32,6 +35,16 @@ const routes = [
     component: BrandingMenu
   },
   {
+    path: '/magMenu',
+    name: 'MagMenu',
+    component: MagMenu
+  },
+  {
+    path: '/vectorMenu',
+    name: 'VectorMenu',
+    component: VectorMenu
+  },
+  {
     path: '/agileBrandPageOutline',
     name: 'AgileBrandPageOutline',
     component: AgileBrandPageOutline
@@ -50,7 +63,7 @@ const routes = [
     path: '/business',
     name: 'Business',
     component: Business
-  },
+  }
 ]
 
 const router = new VueRouter({

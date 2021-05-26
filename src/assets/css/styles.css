@@ -191,6 +191,15 @@
       transform-origin: top left;
       color: white;
   }
+  .wrapper-twoLine-vector {
+    width: 340vw !important;
+    display: flex;
+    flex-direction: row;
+ 
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    color: white;
+}
   .wrapper-content {
     display: flex;
     flex-direction: row;
@@ -228,7 +237,13 @@
       height: 100vh;
       background: #252525;
   }
-  
+  .col-vector {
+    width: 79vw;
+    min-width: 350px;
+    height: 100vh;
+    background: #252525;
+}
+
   .col-content-ux {
       width: 34vw;
       min-width: 350px;

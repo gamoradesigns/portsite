@@ -4,17 +4,20 @@
       <!-- col - empty-->
       <div class="col-beauty">
         <div class="section-content">
+            <router-link
+              class="linkClass"
+              :to="{
+              name: 'Home',
+           
+            }">
           <div class="topSection hideOverflow">
-            <div class="beautyText topLeftBeauty" v-scrollfadinganimation>
+            <div class="topLeftBeauty beautyText" v-scrollfadinganimation>
               beauty. <br />
-
-              <div class="spanbeautyText">
-                &middot; <br />
-                summer edition
-              </div>
+              &middot; <br />
+              <div class="spanbeautyText">summer edition</div>
             </div>
           </div>
-          <div class="middleSection hideOverflow">
+        <div class="middleSection hideOverflow">
             <div class="beautyText sidebarBeauty" v-scrollfadinganimation>
               beauty
               <div class="middot">&middot;</div>
@@ -22,6 +25,7 @@
             </div>
           </div>
           <div class="bottomSection hideOverflow"></div>
+          </router-link>
         </div>
       </div>
       <!-- col - ux content -->
